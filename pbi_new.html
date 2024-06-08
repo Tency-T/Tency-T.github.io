@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Power BI Report</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #ffffff); /* Light gray to white */
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0.2em 0;
+            color: #ff6600; /* Orange */
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .report-container {
+            width: 1140px;
+            height: 541.25px;
+            border: 1px solid #ddd;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+        .report-container:hover {
+            transform: scale(1.02);
+        }
+        .report-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Power BI Report</h1>
+        <p>Interactive insights and data visualizations</p>
+    </div>
+    <div class="report-container">
+        <iframe title="Kol - TUTEM" src="https://app.powerbi.com/reportEmbed?reportId=acd03adf-1e08-4051-af36-397909385bbe&autoAuth=true&ctid=d9fdbd48-60e2-4c84-bb86-6f1cf304a8d8" allowFullScreen="true"></iframe>
+    </div>
+    <footer>
+        &copy; 2024 Your Company. All rights reserved.
+    </footer>
+</body>
+</html>
